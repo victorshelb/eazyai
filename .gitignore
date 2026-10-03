@@ -1,0 +1,32 @@
+# ── Secrets (never commit) ─────────────────────
+.env
+*.env
+!.env.example
+backend/.credentials.json
+**/.credentials.json
+kaggle.json
+
+# ── User data & runtime files ──────────────────
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+backend/uploads/
+backend/trained_models/
+backend/datasets/
+*.log
+
+# ── Dependencies & builds ──────────────────────
+backend/venv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+frontend/node_modules/
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/tsconfig.tsbuildinfo
+.DS_Store
+
+# ── Local tooling ──
+.claude/
